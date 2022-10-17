@@ -1,4 +1,3 @@
-
 def preparation(expression):
     count = 1
     while " " in expression:
