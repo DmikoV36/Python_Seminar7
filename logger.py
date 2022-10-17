@@ -18,6 +18,15 @@ def datetime (data,res):
     with open ('log.csv', 'a') as file:
         file.write('DateTime:{}, Calculation:{}, Result:{}\n'.format(time,data,res))
 
+def view_log():
+    with open('log.csv', 'r') as data:
+        for line in data:
+            print(line)
+
+def clear_log():
+    data = open ('log.csv', 'w')
+    data.close()
+
 
 
 

@@ -1,4 +1,5 @@
 import controller as ctrl
+import logger as log
 
 def start():
     print("Привет!", "Это наш калькулятор!", sep = "\n")
@@ -10,29 +11,20 @@ def start():
             expression = str(input("Введите арифметическое выражение: "))
             chek(expression)
         elif command == "/log":
-            view_log()
+            log.view_log()
         elif command == "/clear":
-            clear_log()
+            log.clear_log()
             print("Файл логирования очищен.")
         elif command == "/stop":
             print("Будем рады видеть Вам снова!")
             break
 
 def chek(expression):
-    values = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '+', '-', '*', '/', '^', '(', ')', 'i', ' ']
+    values = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '+', '-', '*', '/', '^', '(', ')', 'i', ' ', '.']
     for i in range(len(expression)):
         if expression[i] not in values:
             print ("Выражение задано некорректно. Попробуйте ещё раз.")
             start()
     ctrl.separator(expression)
-
-def view_log():
-    with open('log.csv', 'r') as data:
-        for line in data:
-            print(line)
-
-def clear_log():
-    data = open ('log.csv', 'w')
-    data.close()
 
 start()
