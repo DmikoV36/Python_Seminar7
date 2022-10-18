@@ -47,7 +47,6 @@ def preparation(expression):
             count += 2 - offset
         else:
             count += 1
-    print(expression)
     return expression
 
 def priority(oper):
@@ -99,7 +98,6 @@ def opz(expression):
                     oper_stack.pop()
     while len(oper_stack) > 0:
         result.append(oper_stack.pop())
-    print(result)
     return result
 
 def count_opz(list):
