@@ -24,7 +24,7 @@ def preparation(expression):
             count += 1
     count = 3
     while count < len(expression):
-        if ('i' in expression[count]) or ('j' in expression[count]):
+        if (('i' in expression[count]) or ('j' in expression[count])) and expression[count-3] == "(" and expression[count+1] == ")":
             expression[count-2] = expression[count-2] + expression[count-1] + expression[count]
             expression.pop(count)
             expression.pop(count-1)
