@@ -12,7 +12,7 @@
 6. Комплексные числам вводятся в формате a+bi
 
 ## Пример работы программы:
-![https://github.com/DmikoV36/Python_Seminar7/Calc.JPG] (https://github.com/DmikoV36/Python_Seminar7/Calc.JPG))
+![https://github.com/DmikoV36/Python_Seminar7/Calc.JPG] (https://github.com/DmikoV36/Python_Seminar7/Calc.JPG)
 
 Work team:
 1. Соловьев Ярослав - module_racio.py
