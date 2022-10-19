@@ -110,10 +110,6 @@ def count_opz(list):
         else:
             left_oper = final_result.pop()
             right_oper = final_result.pop()
-            if is_number_c(left_oper):
-                left_oper = complex(left_oper)
-            if is_number_c(right_oper):
-                right_oper = complex(right_oper)
             if item == "-":
                 final_result.append(right_oper - left_oper)
             elif item == "+":

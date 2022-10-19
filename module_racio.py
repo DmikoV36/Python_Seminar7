@@ -73,7 +73,6 @@ def opz(expression):
 
 def count_opz(list):
     final_result = []
-    print(item)
     for item in list:
         if type(item) == float:
             final_result.append(item)
